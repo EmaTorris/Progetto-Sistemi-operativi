@@ -39,22 +39,53 @@ Il server può essere terminato in ogni momento della sua esecuzione inviando un
 Il server chatterbox viene attivato da shell con il comando
 $ ./chatterbox -f chatty.conf
 dove chatty.conf fie il file di configurazione contenente tutti i parametri relativi alla configurazione del server. Il formato del file di configurazione è schematizzato in Fig. 1,
-# path utilizzato per la creazione del socket AF_UNIX
+_path utilizzato per la creazione del socket AF_UNIX_
+
+
 UnixPath = /tmp/chatty_socket
-# numero massimo di connessioni concorrenti gestite dal server
+
+
+_numero massimo di connessioni concorrenti gestite dal server_
+
+
 MaxConnections = 32
-# numero di thread nel pool
+
+
+_numero di thread nel pool_
+
+
 ThreadsInPool = 8
-# dimensione massima di un messaggio testuale (numero di caratteri)
+
+
+_dimensione massima di un messaggio testuale (numero di caratteri)_
+
+
 MaxMsgSize = 512
-# dimensione massima di un file accettato dal server (kilobytes)
+
+
+_dimensione massima di un file accettato dal server (kilobytes)_
+
+
 MaxFileSize = 1024
-# numero massimo di messaggi che il server 'ricorda' per ogni client
+
+
+_numero massimo di messaggi che il server 'ricorda' per ogni client_
+
+
 MaxHistMsgs = 16
-# directory dove memorizzare i files da inviare agli utenti
+
+
+_directory dove memorizzare i files da inviare agli utenti_
+
+
 DirName = /tmp/chatty
-# file nel quale verranno scritte le statistiche
+
+
+_file nel quale verranno scritte le statistiche_
+
+
 StatFileName = /tmp/chatty_stats.txt
+
 
 Figure 1: Formato del file testuale chatty.conf
 Nel momento in cui un client si connette al server (CONNECT OP) invia il proprio nickname. Se il nickname non è stato precedentemente registrato con una operazione di

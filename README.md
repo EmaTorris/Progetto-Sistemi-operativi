@@ -1,5 +1,5 @@
 # Progetto-Sistemi-operativi
-Progetto universitario Sistemi Operativi anno accademico 2018-2019
+Progetto universitario Sistemi Operativi anno accademico 2017-2018
 
 
 Lo scopo del progetto e lo sviluppo in C di un server concorrente che implementa una chat. Gli utenti della chat possono scambiarsi messaggi testuali e/o files collegandosi al server con un programma client. Un messaggio testuale e una stringa non vuota avente una lunghezza massima stabilita nel le di congurazione del server (vedi Sez. 2.2). Un file di qualsiasi tipo può essere scambiato tra due client purchè la size non sia superiore a quanto stabilito nel le di congurazione del server (vedi Sez. 2.2). Ogni utente della chat è identificato univocamente da un nickname alfanumerico. L'utente si connette al server, invia richieste e riceve risposte utilizzando un client. Uno o più processi client comunicano con il server per inviare richieste di vario di tipo. Le richieste gestite dal server sono le seguenti:
